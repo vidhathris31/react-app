@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Login from "./Login";
@@ -5,17 +6,19 @@ import Registration from "./Registration";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
+
       <Header />
 
-      <Login />
-
-      <hr />
-
-      <Registration />
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+      </Routes>
 
       <Footer />
-    </div>
+
+    </BrowserRouter>
   );
 }
 
