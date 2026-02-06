@@ -1,8 +1,10 @@
-function Footer(){
- 
-    return(
-        <h1>This is Footer</h1>
-    );
+function Footer() {
+  return (
+    <div>
+      <hr />
+      <p>© 2026 Employee App</p>
+    </div>
+  );
 }
- 
+
 export default Footer;
