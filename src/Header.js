@@ -1,10 +1,18 @@
-function Header() {
+const Header = () => {
   return (
-    <div>
-      <h2>Employee Management System</h2>
-      <hr />
-    </div>
+    <header
+      style={{
+        background: "linear-gradient(90deg,#667eea,#764ba2)",
+        color: "white",
+        padding: "15px",
+        textAlign: "center",
+        fontSize: "22px",
+        fontWeight: "bold"
+      }}
+    >
+      Employee Management System
+    </header>
   );
-}
+};
 
 export default Header;
